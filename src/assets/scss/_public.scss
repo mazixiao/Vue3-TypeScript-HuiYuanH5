@@ -1,0 +1,192 @@
+
+$rs-2560: "max-width:2560px";
+$rs-1920: "max-width:1920px";
+$rs-1700: "max-width:1700px";
+$rs-1650: "max-width:1650px";
+$rs-1600: "max-width:1600px";
+$rs-1650: "max-width:1650px";
+$rs-1440: "max-width:1440px";
+$rs-1366: "max-width:1366px";
+$rs-1280: "max-width:1280px";
+$rs-1024: "max-width:1024px";
+$rs-991: "max-width:991px";
+$rs-850: "max-width:850px";
+$rs-768: "max-width:768px";
+$rs-767: "max-width:767px";
+$rs-640: "max-width:640px";
+$rs-450: "max-width:450px";
+$rs-414: "max-width:414px";
+$rs-412: "max-width:412px";
+$rs-375: "max-width:375px";
+$rs-360: "max-width:360px";
+$rs-320: "max-width:320px";
+
+ @mixin responsive($media){
+  @media only all and ($media){
+    @content;
+  }
+} 
+
+
+/*
+	transition
+	@include transition(all 0.3s);
+*/
+@mixin transition($param) {
+	-webkit-transition: $param;
+	-moz-transition: $param;
+	-o-transition: $param;
+	-ms-transition:$param;
+	transition:$param;
+}
+
+/*
+	transform
+	@include transform(translate(-50%, -50%));
+*/
+@mixin transform($param) {
+	-webkit-transform: $param;
+	-moz-transform: $param;
+	-o-transform: $param;
+	-ms-transform: $param;
+	transform: $param;
+}
+
+/*
+	box-sizing
+	@include box-sizing();
+*/
+@mixin box-sizing() {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+
+
+/*
+	display: flex;
+	@include displayFlex();
+*/
+@mixin displayFlex() {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/*	
+	垂直居中 
+	align-items: center;
+	@include align-items(center);
+*/
+@mixin align-items($param) {
+	-webkit-box-align: $param;
+	-webkit-align-items: $param;
+	-moz-box-align: $param;
+	-ms-flex-align: $param;
+	align-items: $param;
+}
+
+/*
+	水平居中 
+	justify-content: center;
+	@include justify-content(center);
+*/
+@mixin justify-content($param) {
+    -webkit-box-pack: $param;
+    -webkit-justify-content: $param;
+    -moz-box-pack: $param;
+    -ms-flex-pack: $param;
+    justify-content: $param;
+}
+
+
+/*
+	flex: 1;
+	@include flex1();
+*/
+@mixin flex1() {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+/*
+	换行 
+	flex-wrap: wrap;
+	@include flex-wrap(wrap);
+*/
+@mixin flex-wrap($param) {
+    -webkit-flex-wrap: $param;
+    -ms-flex-wrap: $param;
+    flex-wrap: $param;
+}
+
+/*
+	排列方向 (默认从左到右)
+	flex-direction: row;
+	从左到右
+	@include flex-direction(row, normal);
+	从右到左
+	@include flex-direction(row-reverse, reverse);
+*/
+@mixin flex-direction($param, $param2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: $param2;
+    -webkit-flex-direction: $param;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: $param2;
+    -ms-flex-direction: $param;
+    flex-direction: $param;
+}
+
+
+
+/*
+	与交叉轴两端对齐，轴线之间的间隔平均分布。
+	align-content: space-between;
+	@include align-content(space-between);
+*/
+@mixin align-content($param) {
+    -webkit-align-content: $param;
+    align-content: $param;
+}
+
+
+
+
+/* rem适配*/
+
+/* 设计稿375 */
+@function px2rem375($px, $base-font-size: 37.5px) {
+    @return ($px / $base-font-size / 1) * 1rem;
+}
+
+/* 设计稿640 */
+@function px2rem640($px, $base-font-size: 32px) {
+    @return ($px / $base-font-size / 2) * 1rem;
+}
+
+
+/*
+	设计稿750 
+	padding-right: px2rem750(20px);
+*/
+@function px2rem750($px, $base-font-size: 37.5px) {
+    @return ($px / $base-font-size / 2) * 1rem;
+}
+
+
+
+
+
+
+

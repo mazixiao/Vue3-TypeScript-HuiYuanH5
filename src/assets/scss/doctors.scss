@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import 'public';
+
+
+.news-tab {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding-top: 0.05rem;
+  .item {
+    opacity: 0.4;
+    font-size: 0.12rem;
+    font-family: PingFangSC, PingFangSC-Medium;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    line-height: 0.17rem;
+    padding: 0.35rem 0.56rem;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      opacity: 1;
+      border-bottom: 1px solid #b09c6e;
+    }
+    &.active {
+      opacity: 1;
+      border-bottom: 1px solid #b09c6e;
+    }
+    &.router-link-active {
+      opacity: 1;
+      border-bottom: 1px solid #b09c6e;
+    }
+  }
+}
+.index {
+  background-color: rgba(247,247,247,1);
+  padding: 0.5rem 0;
+  &.design {
+    .doctors-introduct {
+      flex-direction: row-reverse;
+      padding-right: 0;
+      padding-left: 0.2rem;
+    }
+  }
+  .doctors-introduct {
+    padding-right: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    .img {
+      width: 50.7%;
+      width: 7.2rem;
+      img {
+        width: 100%;
+        height: 4.5rem;
+      }
+    }
+    .text {
+      width: 49.3%;
+      width: 7rem;
+      padding: 0 0.7rem;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .text-con {
+        .tit {
+          font-size: 0.4rem;
+          // font-family: PingFangSC, PingFangSC-Medium;
+          font-weight: 500;
+          text-align: left;
+          color: #000000;
+          line-height: 0.56rem;
+          padding-bottom: 0.16rem;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 0.15rem;
+            height: 0.04rem;
+            background: #b09c6e;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        .introduct {
+          font-size: 0.12rem;
+          // font-family: PingFangSC, PingFangSC-Medium;
+          font-weight: 500;
+          text-align: left;
+          color: #000000;
+          line-height: 0.17rem;
+          margin-top: 0.16rem;
+          margin-bottom: 0.21rem;
+        }
+        .article {
+          font-size: 0.14rem;
+          // font-family: PingFangSC, PingFangSC-Regular;
+          font-weight: 400;
+          text-align: left;
+          color: #a3a3a3;
+          line-height: 0.24rem;
+        }
+      }
+
+    }
+  }
+
+  .doctors-wrap {
+    padding: 0 0.2rem;
+    padding-top: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      width: 25%;
+      height: 4.5rem;
+      border: 1px solid rgba(254, 254, 254, 1);
+      position: relative;
+      .pic {
+        height: 100%;
+        width: 100%;
+      }
+      .shadow {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(154,131,76,0.9);
+        padding: 0.43rem 0.3rem 0 0.43rem;
+        .name {
+          font-size: 0.3rem;
+          // font-family: PingFangSC, PingFangSC-Medium;
+          font-weight: 500;
+          text-align: left;
+          color: #ffffff;
+          line-height: 0.42rem;
+          padding-bottom: 0.16rem;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 0.15rem;
+            height: 0.04rem;
+            background: #fff;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        .post {
+          font-size: 0.14rem;
+          // font-family: PingFangSC, PingFangSC-Medium;
+          font-weight: 500;
+          text-align: left;
+          color: #ffffff;
+          line-height: 0.2rem;
+          margin-top: 0.13rem;
+          margin-bottom: 0.19rem;
+        }
+        .introduct {
+          font-size: 0.12rem;
+          // font-family: PingFangSC, PingFangSC-Regular;
+          font-weight: 400;
+          text-align: left;
+          color: #ffffff;
+          line-height: 0.22rem;
+        }
+        .dot {
+          color: #fff;
+          font-size: 0.24rem;
+          line-height: 0;
+          position: absolute;
+          left: 0.43rem;
+          bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+
+
+
+
+}
+
+
+
