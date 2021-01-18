@@ -29,4 +29,9 @@ module.exports = {
 
 }
 
+// export default{
+//   apiUrl:apiUrl,
+//   originUrl:originUrl
+// }
+
 

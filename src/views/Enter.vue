@@ -36,13 +36,28 @@
   })
   export default class Enter extends Vue {
     data() {
-      // const that = this;
+      const that = this
       return {
         // 路径
         src: '',
         // 类型
         type: null,
       };
+    }
+    mounted() {
+      // EntryPage().then((response) => {
+      //     console.log(response.data, "EntryPage")
+      //     // if (response.data.ReturnCode == 0) {
+      //     //   if (response.data.Data) {
+      //     //     this.src = response.data.Data[0].enteranimation;
+      //     //     if(response.data.Data[0].type == 1) {
+      //     //       this.type = 1;
+      //     //     } else if(response.data.Data[0].type == 2) {
+      //     //       this.type = 2;
+      //     //     }
+      //     //   }
+      //     // }
+      //   });
     }
    }
 </script>
