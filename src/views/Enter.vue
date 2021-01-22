@@ -27,7 +27,7 @@
 
 <script lang="ts">
   import { Options, Vue } from 'vue-class-component';
-  // import { EntryPage } from "@/assets/js/api";
+  import { EntryPage } from "@/assets/js/api";
 
   @Options({
     components: {
@@ -45,19 +45,19 @@
       };
     }
     mounted() {
-      // EntryPage().then((response) => {
-      //     console.log(response.data, "EntryPage")
-      //     // if (response.data.ReturnCode == 0) {
-      //     //   if (response.data.Data) {
-      //     //     this.src = response.data.Data[0].enteranimation;
-      //     //     if(response.data.Data[0].type == 1) {
-      //     //       this.type = 1;
-      //     //     } else if(response.data.Data[0].type == 2) {
-      //     //       this.type = 2;
-      //     //     }
-      //     //   }
-      //     // }
-      //   });
+      EntryPage().then((response) => {
+          console.log(response.data, "EntryPage")
+          // if (response.data.ReturnCode == 0) {
+          //   if (response.data.Data) {
+          //     this.src = response.data.Data[0].enteranimation;
+          //     if(response.data.Data[0].type == 1) {
+          //       this.type = 1;
+          //     } else if(response.data.Data[0].type == 2) {
+          //       this.type = 2;
+          //     }
+          //   }
+          // }
+        });
     }
    }
 </script>
