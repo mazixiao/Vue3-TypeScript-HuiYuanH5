@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
   },
 
   {
-    path: '/',
+    path: '/Home',
     name: 'Home',
     component: Home,
     meta: {
@@ -41,3 +41,8 @@ const router = createRouter({
 })
 
 export default router
+
+
+
+
+
