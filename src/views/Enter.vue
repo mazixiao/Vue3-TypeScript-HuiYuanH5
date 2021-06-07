@@ -22,11 +22,14 @@
 
 
 
-  const num:  number = 77;
+  const num: number[] = [1, 2];
 
   console.log(num);
 
 
+  const num11: string[] = ["1", "2"];
+
+console.log(num11);
 
 
 
