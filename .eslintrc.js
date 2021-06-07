@@ -16,6 +16,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 未使用的变量会警告
     // "no-unused-vars": "off",
-    "@typescript-eslint/no-this-alias": ["off"]
+    "@typescript-eslint/no-this-alias": ["off"],
+    
   }
 }

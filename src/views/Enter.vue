@@ -13,6 +13,23 @@
   import { Options, Vue } from 'vue-class-component';
   import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
+  import * as foo  from '@/assets/js/foo.ts';
+
+
+  console.log(foo.someVar, "someVar");
+  console.log(foo.someVar11, "someVar11");
+  console.log(foo.someVar22, "someVar22");
+
+
+
+  const num:  number = 77;
+
+  console.log(num);
+
+
+
+
+
   @Options({
     components: {
       HelloWorld,
@@ -22,7 +39,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/scss/enter.scss";
+  @import "@/assets/scss/enter.scss";
 </style>
 
 
